@@ -20,6 +20,7 @@ app.set('views', './src/views'); // Definição da localização da pasta "views
 
 
 const mainRouter = require('./routes/main');
+
 app.use('/', mainRouter);
 
 

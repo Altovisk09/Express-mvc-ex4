@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="/images/icons/logo.png">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <%-include('./partials/indexMenu.ejs')%>
+      <nav class="container-menu2">
+        <ul class="menu2">
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-sharp fa-solid fa-plane" style="color: #363d4a"></i>
+                <p>Passagens</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-solid fa-hotel" style="color: #363d4a"></i>
+                <p>Hospedagem</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-solid fa-bus" style="color: #363d4a"></i>
+                <p>Ônibus</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-solid fa-car" style="color: #363d4a"></i>
+                <p>Carros</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-solid fa-tags" style="color: #363d4a"></i>
+                <p>Promoções</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="menuImg">
+                <i class="fa-solid fa-suitcase-medical" style="color: #363d4a"></i>
+                <p>Seguros</p>
+              </div>
+            </li>
+          </a>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="areaForm">
+        <form action="#" class="form1">
+          <div class="pass">
+            <h2>PASSAGENS AÉREAS</h2>
+            <input type="button" name="btnIda" id="ida" value="Somente ida">
+            <input type="button" name="btnIdaVolta" id="idaVolta" value="Ida e volta">
+          </div>
+          <div class="geral">
+            <div class="locals">
+              <div>
+                <h6>De onde você está saindo?</h6>
+                <label for="origem"></label>
+                <div class="input">
+                  <i class="fas fa-plane-departure" style="color: #474c53;"></i>
+                  <input type="text" name="origem" id="origem" placeholder="Busque por aeroportos">
+                </div>
+              </div>
+              <div class="decoration">
+                <button><i class="fas fa-exchange-alt" style="color: #ec8a08;"></i></button>
+              </div>
+              <div>
+                <h6>Para onde você vai?</h6>
+                <div class="input">
+                  <label for="destino"></label>
+                  <i class="fas fa-plane-arrival" style="color: #474c53;"></i>
+                  <input type="text" name="destino" id="destino" placeholder="Busque por aeroportos">
+                </div>
+              </div>
+            </div>
+            <div class="dates">
+              <div>
+                <h6>Escolha as datas</h6>
+                <label for="ida"></label>
+                <input type="date" name="ida" id="ida">
+                <label for="volta"></label>
+                <input type="date" name="volta" id="volta">
+              </div>
+            </div>
+            <div class="travelers">
+              <div>
+                <h6>passageiros</h6>
+                <div>
+                  <label for="passageiros"></label>
+                  <input type="text" name="passageiros" id="passageiros" min="1" max="10" placeholder="Passageiros">
+                </div>
+              </div>
+              <button type="submit">BUSCAR VOOS</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="ads">
+      <div class="ads1">
+        <img src="/images/banner.png" alt="adsBanner">
+      </div>
+      <div class="ads2">
+        <img src="#" alt="">
+      </div class="ads2">
+    </section>
+    <section class="travels">
+      <div class="grid-container" >
+        <article class="background-image1">
+          <div class="viagem">
+            <h2>Rio de Janeiro</h2>
+            <p>A partir de <br> <p class="valor"><span>R$ </span>199,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+        <article class="background-image2">
+          <div class="viagem">
+            <h2>São Paulo</h2>
+            <p>A partir de <br> <p class="valor"><span>R$ </span>149,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+        <article class="background-image3">
+          <div class="viagem">
+            <h2>Brasília</h2>
+            <p>A partir de <br> <p class="valor"> <span>R$ </span>249,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+        <article class="background-image4">
+          <div class="viagem">
+            <h2>Salvador</h2>
+            <p>A partir de <br> <p class="valor"><span>R$ </span>179,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+        <article class="background-image5">
+          <div class="viagem">
+            <h2>Recife</h2>
+            <p>A partir de <br> <p class="valor"><span>R$</span>209,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+        <article class="background-image6">
+          <div class="viagem">
+            <h2>Fortaleza</h2>
+            <p>A partir de <br> <p class="valor"><span>R$ </span>189,00</p></p>
+            <a href=""><button>Saiba mais</button></a>
+          </div>
+        </article>
+      </div>
+      <div class="btn">
+        <button>Veja todos os destinos</button>
+      </div>
+    </section>    
+    <section class="about">
+      <div class="grid-container2">
+        <article>
+          <div class="article-content">
+            <div>
+              <img width="108" height="181" src="https://img.freepik.com/vetores-gratis/mulher-ilustrada-trabalhando-no-atendimento-ao-cliente_23-2148942144.jpg?w=740&t=st=1688855264~exp=1688855864~hmac=25ef78b42c4d4f4266d1935f5482b5fbdc844cd0b6ebba2edcbdcab938fc333d" alt="">
+            </div>
+            <div class="text">
+            <h2>Quem Somos</h2>
+            <p>Somos uma empresa de viagens apaixonada por criar experiências incríveis para nossos clientes. Desde 2005, estamos no ramo do turismo, proporcionando momentos inesquecíveis.</p>
+          </div>
+        </div>
+        </article>
+        <article>
+          <div class="article-content">
+           <div>
+            <img width="108" height="181" src="https://img.freepik.com/vetores-gratis/mulher-ilustrada-trabalhando-no-atendimento-ao-cliente_23-2148942144.jpg?w=740&t=st=1688855264~exp=1688855864~hmac=25ef78b42c4d4f4266d1935f5482b5fbdc844cd0b6ebba2edcbdcab938fc333d" alt="s">
+           </div>
+            <div class="text">
+            <h2>Central de Ajuda</h2>
+            <p>Bem-vindo à nossa Central de Ajuda! Estamos disponíveis 24/7 para responder suas perguntas e fornecer suporte para tornar sua experiência tranquila.</p>
+          </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-content">
+            <div>
+              <img width="108" height="181" src="https://img.freepik.com/vetores-gratis/mulher-ilustrada-trabalhando-no-atendimento-ao-cliente_23-2148942144.jpg?w=740&t=st=1688855264~exp=1688855864~hmac=25ef78b42c4d4f4266d1935f5482b5fbdc844cd0b6ebba2edcbdcab938fc333d" alt="">
+            </div>
+            <div class="text">
+            <h2>Benefícios</h2>
+            <p>Oferecemos atendimento personalizado, promoções exclusivas, assistência 24 horas e a oportunidade de utilizar pontos de programas de fidelidade para descontos em passagens aéreas.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section>
+      <article class="emailRegister">
+        <i class="fa-regular fa-handshake" style="color: #464b53;"></i>
+            <form  class="form2" action="#">
+              <h3>Inscreva-se para receber ofertas!</h3>
+              <label for="register">
+                <input type="text" name="name" id="name" placeholder="Nome">
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
+              </label>
+              <button type="submit">Eu quero!</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Email: info@exemplo.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Links úteis</h4>
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Redes sociais</h4>
+        <ul class="social-media">
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #186bfb;"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter" style="color: rgb(67, 202, 255)"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Exemplo Viagens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

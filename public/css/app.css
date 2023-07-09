@@ -1,8 +1,436 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+:root {
+  font-size: 62.5%; 
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Montserrat';
+}
+.menu2{
+  display: flex;
+}
+.container-menu2{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(87, 170, 241);
+} 
+.container-menu2 .menuImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.7rem;
+}
+.container-menu2 a li p{
+ color: #000;
+ font-weight: 500;
+} 
+.banner{
+  height: 40rem;
+  background-image: url('/images/banner0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.areaForm{
+  background-color: rgb(207, 223, 220);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-inline: 2.0rem;
+  width: 100%;
+  height: 22rem;
+  border-radius: 1rem;
+  display: flex;
+}
+.form1{
+  margin-top: 4rem;
+  margin-inline: 3rem;
+}
+.input{
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #2f46c5;
+  border-radius: 1rem;
+  gap: 0.5rem;
+  padding: 1rem 1rem;
+  width: 20rem;
+}
+.input input{
+ background-color: transparent;
+ border-style: none;
+ font-size: 1.6rem;
+ width: 15rem;
+}
+input:focus-visible {
+  outline: none;
+}
+.decoration{
+  display: flex;
+  align-items: center;
+}
+.decoration i{
+  font-size: 2rem;
+}
+.decoration button{
+border: 0.3rem solid #ec8a08;
+border-radius: 5rem;
+margin-bottom: -1rem;
+width: 5rem;
+height: 5rem;
+background-color: transparent;
+}
+.geral{
+  display: flex;
+}
+.pass{
+  display: flex;
+  margin-bottom: 5rem;
+}
+.pass input{
+  width: 20rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 0.05rem solid #000 ;
+  background-color: transparent;
+}
+.pass input:focus{
+  color: #ec8a08;
+  background-color: transparent;
+  border-color: #ec8a08;
+  transition: 500ms;
+}
+.pass input[value="Somente ida"]{
+  margin-inline: 2.5rem;
+}
+.locals{
+  display: flex;
+  padding-right: 2rem;
+  
+}
+.dates{
+  display: flex;
+  padding-right: 2rem;
+}
+input[type="date"] {
+  display: inline-block;
+  margin-right: -0.5rem; /* Adapte o valor da margem conforme necessário */
+  height: 4rem;
+  padding: 1rem;
+  background-color: transparent;
+}
+input[name="ida"]{
+  border-radius: 5rem 0 0  5rem;
+  border: 0.05rem solid #000 ;
+}
+input[name="volta"]{
+  border-radius:  0 5rem 5rem 0;
+  border: 0.05rem solid #000 ;
+}
+.dates{
+  display: flex;
+  padding-right: 2rem;
+}
+.travelers{
+  display: flex;
+  align-items: end;
+
+}
+.travelers input{
+ background-color: transparent;
+ border-style: none;
+ font-size: 1.6rem;
+ width: 15rem;
+ border: 0.1rem solid #2f46c5;
+ padding-right: 2rem;
+ align-items: center;
+ border-radius: 1rem;
+ gap: 0.5rem;
+ padding: 1rem 1rem;
+ width: 20rem;
 }
 
-body {
+button[type='submit']{
+  border-radius: 1.2rem;
+  height: 5rem;
+  width: 20rem;
+  border-style: none;
+  font-weight: 900;
+  color: #FFF;
+  margin-bottom: -0.5rem;
+  margin-left: 5rem;
+  background: linear-gradient(308.6deg, rgb(193, 2, 34) -7.94%, rgb(242, 71, 63) 79.38%);
+}
+.ads{
+margin-inline: 2REM;
+display: flex;
+}
+.ads1 img{
+height: 50rem;
+width: 128rem;
+}
+.grid-container {
+  display: grid;
+  margin-inline: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem; 
+  justify-items: center;
+}
+.travels{
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color:rgb(207, 223, 220);
+  margin-bottom: 4rem;
+  
+}
+.travels article{
+  width: 29rem;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  background-size: cover;
+  font-weight: bold;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.363);
+}
+
+.background-image1{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://araraunaturismo.com.br/wp-content/uploads/2015/08/riodejaneiro.jpg');
+}
+.background-image2{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://cognatis.com.br/wp-content/uploads/2021/01/Sao-Paulo-467-banner-1.jpg');
+}
+.background-image3{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://viagemegastronomia.cnnbrasil.com.br/wp-content/uploads/sites/5/2019/04/roteiro-brasilia-home.jpg');
+}
+.background-image4{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://a.cdn-hotels.com/gdcs/production67/d1025/9c42e257-fce5-4600-97d1-c3f3c6afd86b.jpg');
+}
+.background-image5{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://a.cdn-hotels.com/gdcs/production165/d295/de825d07-0f3f-41e6-b41b-031791c6d729.jpg') ;
+}
+.background-image6{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%), url('https://sites.google.com/a/ufc.br/5rncs/_/rsrc/1551224591367/conheca-fortaleza/Beira%20Mar%202.jpg');
+}
+article:hover a button {
+  background-color: #fff;
+  color: #000;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.viagem h2{
+  margin-top:6rem ;
+  margin-bottom: 3.5rem ;
+}
+.viagem .valor{
+  padding-top:1rem;
+  padding-bottom: 3rem;
+  font-size: 3.4rem;
+}
+.viagem .valor span{
+  font-size: 2.2rem;
+} 
+.viagem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.viagem a button{
+  width:20rem ;
+  height: 4rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  font-size: 2rem;
+  border: 0.05rem solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+}
+.viagem a button:active{
+  font-size: 1.5rem;
+  transition: 200ms;
+  border: 0.05rem solid #000000;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn button{
+  width:30rem ;
+  height: 4rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  font-size: 2rem;
+  border: 0.05rem solid #000000;
+  color: #000000;
+  cursor: pointer;
+}
+.btn button:hover{
+  border: 0.05rem solid #fff;
+  color: #000000;
+  background-color: #FFF;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: bold;
+}
+.btn button:active{
+  font-size: 1.5rem;
+  transition: 200ms;
+  border: 0.05rem solid #000000;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(207, 223, 220);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.grid-container2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  
+}
+
+.article-content {
+  font-size: 1.3rem;
+  display: flex;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  width: 38rem;
+  height: 31rem; /* Defina o tamanho desejado */
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.548);
+  align-items: center;
+}
+.image-container {
+  text-align: left;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.emailRegister{
+  background-color: rgb(87, 170, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+.emailRegister i{
+  font-size: 10rem;
+  padding-right: 5rem;
+}
+.form2 h3{
+  padding-bottom: 1rem;
+}
+.form2 input{
+  background-color: #FFF;
+  border-style: none;
+  font-size: 1.6rem;
+  width: 25rem;
+  border-radius: 1rem;
+  border: 0.05rem solid black ;
+  padding: 1rem;
+  color: #000;
+}
+footer {
+  background-color: #f1f1f1;
+  padding: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 30rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-section h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-family: sans-serif;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin-right: 1rem;
+}
+
+.social-media li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
 }
