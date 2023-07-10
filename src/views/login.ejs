@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino 360 | Login</title>
+    <link rel="icon" href="/images/icons/logo.png">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+<body>
+    <header>
+        <%-include('./partials/menu')%>
+    </header>
+    <main>
+        <section class="form-area">
+            <h1>Faça login na sua conta!</h1>
+            <form action="post">
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password">
+                <p>Esqueceu sua senha? <a href="#">clique aqui!</a></p>
+            </div>
+            <button type="submit"><h4>Login</h4></button>
+            </form>
+            <p>Não é cadastrado?, <a href="">cadastre-se!</a></p>
+        </section>
+    </main>
+    <footer>
+        <%-include('./partials/footer')%>
+    </footer>
+</body>
+</html>

@@ -20,9 +20,12 @@ app.set('views', './src/views'); // Definição da localização da pasta "views
 
 
 const mainRouter = require('./routes/main');
+const loginRouter = require('./routes/login');
+const travelsRouter = require('./routes/travels');
 
 app.use('/', mainRouter);
-
+app.use('/login', loginRouter);
+app.use('/mytravels', travelsRouter)
 
 app.use((req, res, next) => next(createError(404)));
 

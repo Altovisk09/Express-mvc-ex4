@@ -5,66 +5,149 @@
     list-style: none;
     text-decoration: none;
 }
-.logo a{
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}
+
+.logo a {
     display: flex;
     align-items: center;
     padding-left: 1.6rem;
     font-size: 3rem;
 }
-.logo a img{
+
+.logo a img {
     width: 5rem;
 }
-.logo a p{
- color: #000;
- font-weight:500;
- padding-left: 1.6rem;
+
+.logo a p {
+    color: #000;
+    font-weight: 500;
+    padding-left: 1.6rem;
 }
-.logo a span{
+
+.logo a span {
     color: rgb(238, 255, 0);
-    font-weight:500;  
+    font-weight: 500;
 }
-.menuOptions{
+
+.menuOptions {
     display: flex;
     align-items: center;
     background-color: rgb(202, 202, 202);
 }
-.menuOptions span{
-background-color: #000;
+
+.menuOptions span {
+    background-color: #000;
 }
-.menuOptions a li p{
+
+.menuOptions a li p {
     color: #000;
 }
-#fixMenu{
+
+#fixMenu {
     background-color: rgb(87, 170, 241);
     display: flex;
     justify-content: space-between;
 }
-#menuBlock{
+
+#menuBlock {
     display: flex;
 }
-#menuBlock div{    
-    display: flex; 
+
+#menuBlock div {
+    display: flex;
     align-items: center;
 }
-#menuBlock div a li p{
+
+#menuBlock div a li p {
     color: #000;
     font-weight: 500;
 }
-.menuBlock{
+
+.menuBlock {
     background-color: #002ba0;
     border-radius: 0 0 0 2.5rem;
 }
-.menuImg{
+
+.menuImg {
     display: flex;
     margin-inline: 3rem;
 }
-.menuImg i{
+
+.menuImg i {
     padding-right: 0.5rem;
     font-size: 2.5rem;
 }
 
-  
+footer {
+    background-color: #f1f1f1;
+    padding: 2rem;
+}
 
-  
-  
-  
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 30rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer-section h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-media li {
+    margin-right: 1rem;
+}
+.social-media li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
