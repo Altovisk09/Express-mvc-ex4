@@ -1,0 +1,22 @@
+[
+      {
+        "id": 1,
+        "nome": "Ada",
+        "senha": "senha_ada123"
+      },
+      {
+        "id": 2,
+        "nome": "Greta",
+        "senha": "senha_greta456"
+      },
+      {
+        "id": 3,
+        "nome": "Vim",
+        "senha": "senha_vim789"
+      },
+      {
+        "id": 4,
+        "nome": "Tim",
+        "senha": "senha_timabc"
+      }
+]
