@@ -16,7 +16,9 @@
                 </a>
             </div>
         <div class="menuOptions">
-            <div>
+            <%if(!locals.userData){%>
+                <%console.log(locals.userData)%>
+                <div>
                 <a href="/login">
                     <li class="menuImg">
                         <i class="fa-solid fa-user-gear" style="color: #363d4a;"></i>
@@ -24,6 +26,17 @@
                     </li>
                 </a>
             </div>
+            <%}else{%>
+                <%console.log(locals.userData)%>
+                <div>
+                    <a href="/#">
+                        <li class="menuImg">
+                            <i class="fa-solid fa-user-gear" style="color: #363d4a;"></i>
+                            <p>Minha conta</p>
+                        </li>
+                    </a>
+                </div>
+                <%}%>
             <div>
                 <a href="/mytravels">
                     <li class="menuImg">

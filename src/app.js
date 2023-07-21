@@ -9,6 +9,12 @@ const session = require('express-session');
 
 const app = express();
 
+// Configurar o middleware de sessão
+app.use(session({
+  secret: 'segredo123',
+  resave: true,
+  saveUninitialized: true
+}));
 app.use(express.static(path.join(__dirname, '../public')));  // Necessário para arquivos estáticos na pasta /public
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
@@ -16,12 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(userLogsMiddleware);
 
-// Configurar o middleware de sessão
-app.use(session({
-  secret: 'segredo123',
-  resave: false,
-  saveUninitialized: true
-}));
+
 
 
 app.set('view engine', 'ejs');

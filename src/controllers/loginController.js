@@ -18,12 +18,10 @@ let loginController = {
       };
       req.session.userData = userData;
 
-      res.render('index', {
-        userData,
-        toThousand
-      })
+
+      res.redirect('/')
     }else{
-      res.send('<alert><p>Credenciais inválidas!</p></alert>')
+      res.send('<script>alert("Credenciais inválidas!"); window.location.href = "/login";</script>');
     }
   },
   mytravels: (req, res) => {
