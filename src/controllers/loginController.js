@@ -17,16 +17,20 @@ let loginController = {
         nome: userLog.nome,
       };
       req.session.userData = userData;
-
-
+      
       res.redirect('/')
+      console.log(req.session.userData);
     }else{
       res.send('<script>alert("Credenciais inválidas!"); window.location.href = "/login";</script>');
     }
   },
   mytravels: (req, res) => {
-    
-  }
+    res.render('travels')
+  },
+  logout: (req, res) => {
+    req.session.destroy()
+    return res.redirect('/')
+  },
 };
 
 module.exports = loginController;

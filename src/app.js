@@ -6,20 +6,22 @@ const path = require('path');
 const fs = require('fs')
 const userLogsMiddleware = require('./middlewares/userLogs')
 const session = require('express-session');
-
+const estaLogado = require('./middlewares/sessionLog')
 const app = express();
 
 // Configurar o middleware de sessão
 app.use(session({
+  name: 'nome-personalizado',
   secret: 'segredo123',
-  resave: true,
-  saveUninitialized: true
+  resave: false,
+  saveUninitialized: false
 }));
 app.use(express.static(path.join(__dirname, '../public')));  // Necessário para arquivos estáticos na pasta /public
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
+app.use(estaLogado)
 app.use(userLogsMiddleware);
 
 

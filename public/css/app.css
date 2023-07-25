@@ -167,6 +167,7 @@ button[type='submit']{
   background: linear-gradient(308.6deg, rgb(193, 2, 34) -7.94%, rgb(242, 71, 63) 79.38%);
 }
 .ads{
+  justify-content: center;
 margin-inline: 2REM;
 display: flex;
 }
